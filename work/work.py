@@ -208,7 +208,7 @@ while True:
     pygame.display.init()
     screen = pygame.display.set_mode([650, 600])
     pygame.display.set_caption("MyPygame")
-    my_font = pygame.font.Font("msyh.ttc", 30)
+    my_font = pygame.font.Font("fzlt.ttf", 30)
     text1 = my_font.render("重", True, black)
     text2 = my_font.render("新", True, black)
     text3 = my_font.render("开", True, black)
