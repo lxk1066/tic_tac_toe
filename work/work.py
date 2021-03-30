@@ -208,21 +208,21 @@ while True:
     pygame.display.init()
     screen = pygame.display.set_mode([650, 600])
     pygame.display.set_caption("MyPygame")
-    font = pygame.font.Font("../Font/msyh.ttc", 30)
-    text1 = font.render("重", True, black)
-    text2 = font.render("新", True, black)
-    text3 = font.render("开", True, black)
-    text4 = font.render("始", True, black)
-    text5 = font.render("先", True, black)
-    text6 = font.render("后", True, black)
-    text7 = font.render("只要心中有梦想的火种，", True, black)
-    text8 = font.render("终于一天我们会被生活点燃！", True, black)
+    my_font = pygame.font.Font("msyh.ttc", 30)
+    text1 = my_font.render("重", True, black)
+    text2 = my_font.render("新", True, black)
+    text3 = my_font.render("开", True, black)
+    text4 = my_font.render("始", True, black)
+    text5 = my_font.render("先", True, black)
+    text6 = my_font.render("后", True, black)
+    text7 = my_font.render("只要心中有梦想的火种，", True, black)
+    text8 = my_font.render("终于一天我们会被生活点燃！", True, black)
     # 刷新背景
     background()
 
     while True:
         for event in pygame.event.get():
-            # print(pygame.mouse.get_pos())
+            print(pygame.mouse.get_pos())
             mouse = pygame.mouse.get_pos()
 
             if count != 0:
@@ -247,7 +247,7 @@ while True:
                 x = event.pos[0]
                 # 鼠标的y坐标
                 y = event.pos[1]
-                # print(x, y)
+                print(x, y)
 
                 if 600 <= mouse[0] <= 650 and 200 <= mouse[1] <= 400 and event.button == 1:
                     n = 1
